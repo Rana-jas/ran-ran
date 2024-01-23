@@ -1,0 +1,1189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>IRHAS - HTML Documentation</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css"
+        media="screen, projection">
+    <style type="text/css" media="screen">
+        table,
+        hr,
+        .box {
+            margin-bottom: 25px;
+        }
+
+        .box p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h3 class="center alt"><strong>IRHAS HTML</strong> Documentation by <strong>Themes Awesome</strong> v1.0</h3>
+
+        <hr>
+
+        <h1 class="center">IRHAS - Multiconcept Digital Agency HTML Template</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Created: 8 january 2021<br>
+                        By: Themes Awesome<br>
+                        Support: Ask support access <a href="https://themesawesome.zendesk.com/hc/en-us">HERE</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing IRHAS HTML. If you have any questions that
+                    aren't covered in the documentation, then please send me a PM and I'll be happy to help. Thanks
+                    again!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#tips">TIPS</a></li>
+                <li><a href="#files_structure">FILES STRUCTURE</a></li>
+                <li><a href="#html_structure">HTML STRUCTURE</a></li>
+                <li><a href="#css_structure">CSS STRUCTURE</a></li>
+                <li><a href="#java_script">JAVA SCRIPT</a></li>
+                <li><a href="#customization_styles">CUSTOMIZATION &amp; STYLES</a></li>
+                <li><a href="#responsive">RESPONSIVE</a></li>
+                <li><a href="#source_credits">SOURCE &amp; CREDITS</a></li>
+            </ul>
+        </ol>
+        <br /><br />
+        <hr>
+        <br />
+
+        <div class="clear"></div>
+
+        <hr>
+
+        <h3 id="setting-up"><strong>IRHAS HTML</strong> - <a href="#toc">top</a></h3>
+
+        <div class="subsection" id="start">
+            <h4>IRHAS</h4>
+            <p>IRHAS Logo is </p>
+            <img src="assets/images/irhas-logo-tf.png" style="width:25%;margin: 0 35%;" />
+            <br /><br />
+        </div>
+
+        <div class="subsection" id="tips">
+            <h4>Tips</h4>
+            <p class="note">
+                Use Firebug or Chrome Developer Tools.</p>
+            <p class="note">
+                Do not start from scratch, use an existing page from the demo and modify it to learn how it works.</p>
+            <p class="note">
+                Getting an error message? Someone might have seen it too, try a google search for a quick fix.</p>
+            <p class="note">
+                Explore the live demo for pages ideas and sample code.</p>
+        </div>
+
+        <div class="subsection" id="files_structure">
+            <h4>Files Structure</h4>
+            <pre>
+			- css (Template CSS )
+
+			- fonts (All Fonts & Icons)
+
+			- img (All Images)
+
+			- js (jQuery file and all plugin js file)
+
+			</pre>
+        </div>
+
+
+        <div class="subsection" id="html_structure">
+            <h4>Html Structure</h4>
+            <p> The default grid system utilizes <strong>12 columns</strong>, making for a <strong>1080px </strong>wide
+                depending on your viewport. Below 640px viewports, the columns become fluid and stack vertically.<br>
+                <br>
+                Create a .grid and add the appropriate number of .col-span-*.<br>
+                &nbsp;
+            </p>
+            <h5>HTML Markup</h5>
+            <pre class="brush: html">
+            &lt;div class="thaw-container"&gt;
+                &lt;div class="grid gap-12 grid-cols-12"&gt;
+                    &lt;div class="col-span-1"&gt;
+                        Level 1 column
+                        &lt;div class="col-span-2"&gt;Level 2&lt;/div&gt;
+                        &lt;div class="col-span-2&gt;Level 2&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+			</pre>
+            <p> &nbsp;</p>
+            <p> If you need more information, please visit this site: <a
+                    href="http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem">http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem</a>
+            </p>
+
+            <h5>Head Script (Default)</h5>
+            <pre>
+            &lt;head&gt;
+                &lt;meta http-equiv="content-type" content="text/html; charset=utf-8" /&gt;
+                &lt;!-- Stylesheets
+                        ============================================= --&gt;
+                
+                &lt;link rel="stylesheet" href="css/aos.css" type="text/css" /&gt;
+                &lt;link rel="stylesheet" href="css/plugin.css" type="text/css" /&gt;
+                &lt;link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css"&gt;
+                &lt;link rel="stylesheet" href="css/thaw-flexgrid.css" type="text/css" /&gt;
+                &lt;link rel="stylesheet" href="css/font.css" type="text/css" /&gt;
+                &lt;link rel="stylesheet" href="css/all.min.css" type="text/css"&gt;
+                &lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;
+                &lt;link rel="stylesheet" href="css/responsive.css" type="text/css" /&gt;
+                &lt;link rel="stylesheet" href="css/lightgallery.min.css" type="text/css"&gt;
+                &lt;!-- External Styles
+                        ============================================= --&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
+                &lt;!-- Document Title
+                        =============================================--&gt;
+                &lt;title&gt;Irhas1 | Irhas HTML Themes&lt;/title&gt;
+            &lt;/head&gt;
+		</pre>
+
+            <h5>Header Markup</h5>
+
+            <pre>
+            &lt;!-- HEADER IRHAS 1
+                    ============================================= --&gt;
+                    
+                &lt;!-- HEADER START
+                    ============================================= --&gt;
+                &lt;header id="header"&gt;
+                    &lt;div class="subheader "&gt;
+                        &lt;div class="thaw-container"&gt;
+                            &lt;div class="flex justify-between flex-wrap items-center"&gt;
+                                &lt;div class="subheader-content-left"&gt;
+                                    &lt;p&gt;&lt;strong&gt;Digital Software&lt;/strong&gt; &lt;span&gt;For Startup&gtl/span&gt;&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;div class="subheader-content-right justify-end flex flex-wrap items-stretch"&gt;
+                                    &lt;nav class="subheader-list flex"&gt;
+                                        &lt;ul id="menu-top" class="flex sm sm-clean the-subheader"&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Cookie Policy&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Terms And Condition&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="header-style-1"&gt;
+                        &lt;div class="thaw-container"&gt;
+                            &lt;div class="header-style1-wrap grid grid-cols-12"&gt;
+                                &lt;div class="header-content-left col-span-9 res:col-span-12 sm:col-span-12 grid grid-cols-12"&gt;
+                                    &lt;!-- LOGO START
+                                            ============================================= --&gt;
+                                    &lt;div class="logo col-span-3"&gt;
+                                        &lt;a href="index.html"&gt;
+                                            &lt;img src="img/irhas1.png" alt=Irhas Logo" /&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;!-- LOGO END --&gt;
+                                    &lt;!-- NAVIGATION START
+                                            ============================================= --&gt;
+                                    &lt;nav class="main-nav col-span-9  sm:col-span-12"&gt;
+                                        &lt;!-- Mobile menu toggle button (hamburger/x icon) --&gt;
+                                        &lt;input id="main-menu-state" type="checkbox" /&gt;
+                                        &lt;label class="main-menu-btn" for="main-menu-state"&gt;
+                                            &lt;span class="main-menu-btn-icon"&gt;&lt;/span&gt; Toggle main menu visibility
+                                        &lt;/label&gt;
+                                        &lt;!-- Sample menu definition --&gt;
+                                        &lt;ul id="main-menu" class="sm sm-clean"&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                                                &lt;ul class="sub-menu"&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="index.html"&gt;Home 1&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="home2.html"&gt;Home 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="home3.html"&gt;Home 3&lt;/a&gt;&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item "&gt;
+                                                &lt;a href="service.html"&gt;Service&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="projects.html"&gt;Projects&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="about.html"&gt;About&lt;/a&gt;
+                                                &lt;ul class="sub-menu"&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about.html"&gt;About 1&lt;/a&tl;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about2.html"&gt;About 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about3.html"&gt;About 3&lt;/a&gt;&lt;/li&gt;
+                                                &gt;/ul&lt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;
+                                                &lt;a href="blog.html"&gt;Blog&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;
+                                                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                    &lt;!-- NAVIGATION END --&gt;
+                                &lt;/div&gt;
+                                &lt;div class="header-content-right col-span-3"&gt;
+                                    &lt;div class="content-right-area"&gt;
+                                        &lt;ul class="right-area-menu"&gt;
+                                            &lt;li class="right-area-item"&gt;
+                                                &lt;span class="phone-number"&gt;+62 800 1402&t;/span&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="right-area-item"&gt;
+                                                &lt;a href="#" class="button button-head-item"&gt;Get Started&lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/header&gt;
+                &lt;!-- HEADER END --&gt;
+
+            &lt;!-- END HEADER IRHAS 1 --&gt;
+
+            &lt;!-- HEADER IRHAS 2
+                    ============================================= --&gt;
+                    
+                &lt;header&gt;
+                    &lt;div class="header-style-2"&gt;
+                        &lt;div class="thaw-container"&gt;
+                            &lt;div class="header-style2-wrap grid grid-cols-12"&gt;
+                                &lt;div class="header-content-left col-span-9 res:col-span-12 sm:col-span-12 grid grid-cols-12"&gt;
+                                    &lt;!-- LOGO START
+                                            ============================================= --&gt;
+                                    &lt;div class="logo col-span-3"&gt;
+                                        &lt;a href="index.html"&gt;
+                                            &lt;img src="img/irhas2.png" alt=Irhas Logo" /&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;!-- LOGO END --&gt;
+                                    &lt;!-- NAVIGATION START
+                                            ============================================= --&gt;
+                                    &lt;nav class="main-nav col-span-9  sm:col-span-12"&gt;
+                                        &lt;!-- Mobile menu toggle button (hamburger/x icon) --&gt;
+                                        &lt;input id="main-menu-state" type="checkbox" /&gt;
+                                        &lt;label class="main-menu-btn" for="main-menu-state"&gt;
+                                            &lt;span class="main-menu-btn-icon"&gt;&lt;/span&gt; Toggle main menu visibility
+                                        &lt;/label&gt;
+                                        &lt;!-- Sample menu definition --&gt;
+                                        &lt;ul id="main-menu" class="sm sm-clean"&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                                                &lt;ul class="sub-menu"&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="index.html"&gt;Home 1&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="home2.html"&gt;Home 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="home3.html"&gt;Home 3&lt;/a&gt;&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="projects.html"&gt;Projects&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item "&gt;
+                                                &lt;a href="service.html"&gt;Service&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="about.html"&gt;About&lt;/a&gt;
+                                                &lt;ul class="sub-menu"&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about.html"&gt;About 1&lt;/a&tl;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about2.html"&gt;About 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about3.html"&gt;About 3&lt;/a&gt;&lt;/li&gt;
+                                                &gt;/ul&lt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;
+                                                &lt;a href="blog.html"&gt;Blog&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;
+                                                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                    &lt;!-- NAVIGATION END --&gt;
+                                &lt;/div&gt;
+                                &lt;div class="header-content-right col-span-3"&gt;
+                                    &lt;div class="content-right-area"&gt;
+                                        &lt;ul class="right-area-menu"&gt;
+                                            &lt;li class="right-area-item"&gt;
+                                                &lt;span class="phone-number"&gt;+62 800 1402&t;/span&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="right-area-item"&gt;
+                                                &lt;a href="#" class="button button-head-item"&gt;Get Started&lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/header&gt;
+
+            &lt;!-- END HEADER IRHAS 2 --&gt;
+
+            &lt;!-- HEADER IRHAS 3
+                    ============================================= --&gt;
+
+                &lt;header&gt;
+                    &lt;div class="header-style-3"&gt;
+                        &lt;div class="thaw-container"&gt;
+                            &lt;div class="header-style3-wrap grid grid-cols-12"&gt;
+                                &lt;div class="header-content-left col-span-9 res:col-span-12 sm:col-span-12 grid grid-cols-12"&gt;
+                                    &lt;!-- LOGO START
+                                            ============================================= --&gt;
+                                    &lt;div class="logo col-span-3"&gt;
+                                        &lt;a href="index.html"&gt;
+                                            &lt;img src="img/irhas3.png" alt=Irhas Logo" /&gt;
+                                        &lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;!-- LOGO END --&gt;
+                                    &lt;!-- NAVIGATION START
+                                            ============================================= --&gt;
+                                    &lt;nav class="main-nav col-span-9  sm:col-span-12"&gt;
+                                        &lt;!-- Mobile menu toggle button (hamburger/x icon) --&gt;
+                                        &lt;input id="main-menu-state" type="checkbox" /&gt;
+                                        &lt;label class="main-menu-btn" for="main-menu-state"&gt;
+                                            &lt;span class="main-menu-btn-icon"&gt;&lt;/span&gt; Toggle main menu visibility
+                                        &lt;/label&gt;
+                                        &lt;!-- Sample menu definition --&gt;
+                                        &lt;ul id="main-menu" class="sm sm-clean"&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="index.html"&gt;Home&lt;/a&gt;
+                                                &lt;ul class="sub-menu"&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="index.html"&gt;Home 1&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="home2.html"&gt;Home 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="home3.html"&gt;Home 3&lt;/a&gt;&lt;/li&gt;
+                                                &lt;/ul&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="projects.html"&gt;Projects&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item "&gt;
+                                                &lt;a href="service.html"&gt;Service&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item has-submenu"&gt;
+                                                &lt;a href="about.html"&gt;About&lt;/a&gt;
+                                                &lt;ul class="sub-menu"&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about.html"&gt;About 1&lt;/a&tl;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about2.html"&gt;About 2&lt;/a&gt;&lt;/li&gt;
+                                                    &lt;li class="menu-item-sub"&gt;&lt;a href="about3.html"&gt;About 3&lt;/a&gt;&lt;/li&gt;
+                                                &gt;/ul&lt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;
+                                                &lt;a href="blog.html"&gt;Blog&lt;/a&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;
+                                                &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/nav&gt;
+                                    &lt;!-- NAVIGATION END --&gt;
+                                &lt;/div&gt;
+                                &lt;div class="header-content-right col-span-3"&gt;
+                                    &lt;div class="content-right-area"&gt;
+                                        &lt;ul class="right-area-menu"&gt;
+                                            &lt;li class="right-area-item"&gt;
+                                                &lt;span class="phone-number"&gt;+62 800 1402&t;/span&gt;
+                                            &lt;/li&gt;
+                                            &lt;li class="right-area-item"&gt;
+                                                &lt;a href="#" class="button button-head-item"&gt;Get Started&lt;/a&gt;
+                                            &lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/header&gt;
+
+            &lt;!-- END HEADER IRHAS 3 --&gt;
+            
+		</pre>
+
+            <h5>Template</h5>
+
+            <p>IRHAS have 9 template but in different style(IRHAS 1, IRHAS 2 and IRHAS 3)</p>
+            <ul>
+                <li>Home</li>
+                <li>Project
+                    <ul>
+                        <li>Single Project</li>
+                    </ul>
+                </li>
+                <li>Service
+                    <ul>
+                        <li>Single Service</li>
+                    </ul>
+                </li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Single Post</li>
+                <li>Contact</li>
+            </ul>
+
+            <p>so <strong>how to identify each style?</strong> it's simple, you will spot the different just look at
+                each .html file example:
+            <ul>
+                <li>
+                    <strong>about.html</strong> for <strong>IRHAS1 About Page</strong>
+                </li>
+                <li>
+                    <strong>about2.html</strong> for <strong>IRHAS2 About Page</strong>
+                </li>
+                <li>
+                    <strong>about3.html</strong> for <strong>IRHAS3 About Page</strong>
+                </li>
+            </ul>
+            note: <strong>index.html</strong> for <strong>IRHAS1 Home Page</strong>
+            </p>
+
+            <p>Then <strong>How to identify each style,in html file itself?</strong></p> it's quite simple too, just
+            look at body class each style have <strong>uninque class</strong>
+            <ul>
+                <li><strong>IRHAS 1</strong>
+                    <pre>
+                    &lt;body class="irhas1"&gt;
+                        &lt;!--- content goes here ---&gt;
+                    &lt;/body&gt;
+                    </pre>
+                </li>
+                <li><strong>IRHAS 2</strong>
+                    <pre>
+                    &lt;body class="irhas2"&gt;
+                        &lt;!--- content goes here ---&gt;
+                    &lt;/body&gt;
+                    </pre>
+                </li>
+                <li><strong>IRHAS 3</strong>
+                    <pre>
+                    &lt;body class="irhas3"&gt;
+                        &lt;!--- content goes here ---&gt;
+                    &lt;/body&gt;
+                    </pre>
+                </li>
+            </ul>
+
+            <h5>Footer Script Markup</h5>
+            <pre>
+            &lt;!---IRHAS FOOTER 1 ==================================--&gt;
+
+            &lt;!-- Footer --&gt;
+            &lt;footer class="footer"&gt;
+                &lt;!-- Footer Widgets --&gt;
+                &lt;div class="footer-widgets-holder"&gt;
+                    &gt;div class="thaw-container"&lt;
+                        &gt;div class="footer-widgets2 grid grid-cols-12 gap-24"&lt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_text"&gt;
+                                    &lt;div class="textwidget"&gt;
+                                        &lt;p class="logo-footer"&gt;&lt;img src="img/irhas1white.png" alt=""&gt;&lt;/p&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore dolore. Nam tincidunt, tellus quis maximus consequat. et
+                                            malesuada nibh lorem vel.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &gt;div id="irhas_icon-widget-2" class="widget-footer widget_irhas_icon"&lt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_irhas_servicepost"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Our Service&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="sidebar-recent-post"&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Referral Service Management&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4>
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Personal Service Development&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Strategy Business Management&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Partnership Quality Member&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_irhas_newestpostthumb"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Newest Post&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="custom-post-widget clearfix"&gt;
+                                        &lt;div class="custom-post-wrap"&gt;
+                                            &lt;!-- widget-news --&gt;
+                                            &lt;div class="post-item clearfix"&gt;
+                                                &lt;div class="post-content clearfix"&gt;
+                                                    &lt;div class="post-thumb-wrap"&gt;
+                                                        &lt;div class="post-thumb"&gt;
+                                                            &lt;a href="single-post.html"&gt;
+                                                                &lt;img src="img/newest-post-footer-1.png" alt="latestwid-img"&gt;
+                                                                &lt;div class="irhas-overlay"&gt;&lt;div&gt;
+                                                            &lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- thumbnail--&gt;
+                                                    &lt;div class="post-inner-content has-thumb clearfix"&gt;
+                                                        &lt;h5&gt;&lt;a href="single-post.html"&gt;How to surviving on the great
+                                                                industry age&lt;/a&gt;&lt;/h5&gt;
+                                                        &lt;div class="meta-latest-news"&gt;
+                                                            &lt;div class="meta-info"&gt;
+                                                                &lt;span class="date span-head"&gt;
+                                                                    &lt;a href="#"&gt;
+                                                                        &lt;span&gt;July 14, 2020&lt;/span&gt;
+                                                                    &lt;/a&gt;
+                                                                &lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- widget-news end --&gt;
+                                            &lt;!-- widget-news --&gt;
+                                            &lt;div class="post-item clearfix"&gt;
+                                                &lt;div class="post-content clearfix"&gt;
+                                                    &lt;div class="post-thumb-wrap"&gt;
+                                                        &lt;div class="post-thumb"&gt;
+                                                            &lt;a href="single-post.html"&gt;
+                                                                &lt;img src="img/newest-post-footer-1.png" alt="latestwid-img"&gt;
+                                                                &lt;div class="irhas-overlay"&gt;&lt;/div&gt;
+                                                            &lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- thumbnail--&gt;
+                                                    &lt;div class="post-inner-content has-thumb clearfix"&gt;
+                                                        &lt;h5&gt;&lt;a href="single-post.html"&gt;Teamwork as a team is the best way to
+                                                                do the job&lt;/a&gt;
+                                                        &lt;/h5&gt;
+                                                        &lt;div class="meta-latest-news"&gt;
+                                                            &lt;div class="meta-info"&gt;
+                                                                &lt;span class="date span-head"&gt;
+                                                                    &lt;a href="#"&gt;
+                                                                        &lt;span&gt;July 14, 2020&lt;/span&gt;
+                                                                    &lt;/a&gt;
+                                                                &lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- widget-news end --&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_text"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Get In Touch&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="textwidget"&gt;
+                                        &lt;p&gt;&lt;strong&gt;+62 828 111 96 75&lt;/strong&gt;&lt;/p&gt;
+                                        &lt;p&gt;Jl. Maleer Indah II, Maleer, Batununggal, Kota Bandung, Jawa Barat 40274.&lt;/p&gt;
+                                        &lt;p&gt;irhas@contact.com&lt;br&gt;
+                                            info@irhas.com
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Footer Widgets --&lt;
+                &lt;div class="footer-bottom-holder"&lt;
+                    &lt;div class="thaw-container"&gt;
+                        &lt;div class="footer-bottom grid grid-cols-12"&gt;
+                            &lt;div class="footer-bottom-lisensi col-span-6 res:col-span-12 sm:col-span-12 self-center"&gt;
+                                &lt;!-- COPYRIGHT START--&gt;
+                                &lt;p class="copyright-footer"&gt;Built by &lt;a href="https://themesawesome.com/"&gt;Themes Awesome&lt;/a&gt;
+                                &lt;/p&gt;
+                                &lt;!-- COPYRIGHT END --&gt;
+                            &lt;/div&gt;
+                            &lt;div
+                                class="footer-bottom-contact col-span-6 res:col-span-12 sm:col-span-12 self-center flex justify-end flex-wrap items-stretch items-center"&gt;
+                                &lt;div class="contact-footer items-center"&gt;
+                                    &lt;div class="contact-footer-menu"&gt;
+                                        &lt;ul class="sm"&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&gt;/li&lt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Cookie Policy&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Terms And Condition&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;ul class="footer-socials"&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/footer&gt;
+            &lt;!-- End Footer --&gt;
+
+            &lt;!--END IRHAS1 FOOTER--&gt;
+
+            &lt;!---IRHAS FOOTER 2 ==================================--&gt;
+
+            &lt;!-- Footer --&gt;
+            &lt;footer class="footer"&gt;
+                &lt;!-- Footer Widgets --&gt;
+                &lt;div class="footer-widgets-holder-home2"&gt;
+                    &gt;div class="thaw-container"&lt;
+                        &gt;div class="footer-widgets2 grid grid-cols-12 gap-24"&lt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_text"&gt;
+                                    &lt;div class="textwidget"&gt;
+                                        &lt;p class="logo-footer"&gt;&lt;img src="img/irhas2.png" alt=""&gt;&lt;/p&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore dolore. Nam tincidunt, tellus quis maximus consequat. et
+                                            malesuada nibh lorem vel.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &gt;div id="irhas_icon-widget-2" class="widget-footer widget_irhas_icon"&lt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_irhas_servicepost"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Our Service&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="sidebar-recent-post"&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Referral Service Management&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4>
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Personal Service Development&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Strategy Business Management&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Partnership Quality Member&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_irhas_newestpostthumb"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Newest Post&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="custom-post-widget clearfix"&gt;
+                                        &lt;div class="custom-post-wrap"&gt;
+                                            &lt;!-- widget-news --&gt;
+                                            &lt;div class="post-item clearfix"&gt;
+                                                &lt;div class="post-content clearfix"&gt;
+                                                    &lt;div class="post-thumb-wrap"&gt;
+                                                        &lt;div class="post-thumb"&gt;
+                                                            &lt;a href="single-post.html"&gt;
+                                                                &lt;img src="img/newest-post-footer-1.png" alt="latestwid-img"&gt;
+                                                                &lt;div class="irhas-overlay"&gt;&lt;div&gt;
+                                                            &lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- thumbnail--&gt;
+                                                    &lt;div class="post-inner-content has-thumb clearfix"&gt;
+                                                        &lt;h5&gt;&lt;a href="single-post.html"&gt;How to surviving on the great
+                                                                industry age&lt;/a&gt;&lt;/h5&gt;
+                                                        &lt;div class="meta-latest-news"&gt;
+                                                            &lt;div class="meta-info"&gt;
+                                                                &lt;span class="date span-head"&gt;
+                                                                    &lt;a href="#"&gt;
+                                                                        &lt;span&gt;July 14, 2020&lt;/span&gt;
+                                                                    &lt;/a&gt;
+                                                                &lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- widget-news end --&gt;
+                                            &lt;!-- widget-news --&gt;
+                                            &lt;div class="post-item clearfix"&gt;
+                                                &lt;div class="post-content clearfix"&gt;
+                                                    &lt;div class="post-thumb-wrap"&gt;
+                                                        &lt;div class="post-thumb"&gt;
+                                                            &lt;a href="single-post.html"&gt;
+                                                                &lt;img src="img/newest-post-footer-1.png" alt="latestwid-img"&gt;
+                                                                &lt;div class="irhas-overlay"&gt;&lt;/div&gt;
+                                                            &lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- thumbnail--&gt;
+                                                    &lt;div class="post-inner-content has-thumb clearfix"&gt;
+                                                        &lt;h5&gt;&lt;a href="single-post.html"&gt;Teamwork as a team is the best way to
+                                                                do the job&lt;/a&gt;
+                                                        &lt;/h5&gt;
+                                                        &lt;div class="meta-latest-news"&gt;
+                                                            &lt;div class="meta-info"&gt;
+                                                                &lt;span class="date span-head"&gt;
+                                                                    &lt;a href="#"&gt;
+                                                                        &lt;span&gt;July 14, 2020&lt;/span&gt;
+                                                                    &lt;/a&gt;
+                                                                &lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- widget-news end --&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_text"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Get In Touch&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="textwidget"&gt;
+                                        &lt;p&gt;&lt;strong&gt;+62 828 111 96 75&lt;/strong&gt;&lt;/p&gt;
+                                        &lt;p&gt;Jl. Maleer Indah II, Maleer, Batununggal, Kota Bandung, Jawa Barat 40274.&lt;/p&gt;
+                                        &lt;p&gt;irhas@contact.com&lt;br&gt;
+                                            info@irhas.com
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Footer Widgets --&lt;
+                &lt;div class="footer-bottom-holder"&lt;
+                    &lt;div class="thaw-container"&gt;
+                        &lt;div class="footer-bottom grid grid-cols-12"&gt;
+                            &lt;div class="footer-bottom-lisensi col-span-6 res:col-span-12 sm:col-span-12 self-center"&gt;
+                                &lt;!-- COPYRIGHT START--&gt;
+                                &lt;p class="copyright-footer"&gt;Built by &lt;a href="https://themesawesome.com/"&gt;Themes Awesome&lt;/a&gt;
+                                &lt;/p&gt;
+                                &lt;!-- COPYRIGHT END --&gt;
+                            &lt;/div&gt;
+                            &lt;div
+                                class="footer-bottom-contact col-span-6 res:col-span-12 sm:col-span-12 self-center flex justify-end flex-wrap items-stretch items-center"&gt;
+                                &lt;div class="contact-footer items-center"&gt;
+                                    &lt;div class="contact-footer-menu"&gt;
+                                        &lt;ul class="sm"&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&gt;/li&lt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Cookie Policy&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Terms And Condition&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;ul class="footer-socials"&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/footer&gt;
+            &lt;!-- End Footer --&gt;
+
+            &lt;!--END IRHAS2 FOOTER--&gt;
+
+            &lt;!---IRHAS FOOTER 3 ==================================--&gt;
+
+            &lt;!-- Footer --&gt;
+            &lt;footer class="footer"&gt;
+                &lt;!-- Footer Widgets --&gt;
+                &lt;div class="footer-widgets-holder"&gt;
+                    &gt;div class="thaw-container"&lt;
+                        &gt;div class="footer-widgets2 grid grid-cols-12 gap-24"&lt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_text"&gt;
+                                    &lt;div class="textwidget"&gt;
+                                        &lt;p class="logo-footer"&gt;&lt;img src="img/irhas3.png" alt=""&gt;&lt;/p&gt;
+                                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut labore dolore. Nam tincidunt, tellus quis maximus consequat. et
+                                            malesuada nibh lorem vel.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &gt;div id="irhas_icon-widget-2" class="widget-footer widget_irhas_icon"&lt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_irhas_servicepost"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Our Service&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="sidebar-recent-post"&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Referral Service Management&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4>
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Personal Service Development&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Strategy Business Management&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                        &lt;!-- widget-news --&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;div class="latest-post-content"&gt;
+                                                &lt;h4&gt;
+                                                    &lt;a href="single-service.html"&gt;
+                                                        &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+                                                        &lt;span&gt;Partnership Quality Member&lt;/span&gt;
+                                                    &lt;/a&gt;
+                                                &lt;/h4&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                        &lt;!-- widget-news end --&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_irhas_newestpostthumb"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Newest Post&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="custom-post-widget clearfix"&gt;
+                                        &lt;div class="custom-post-wrap"&gt;
+                                            &lt;!-- widget-news --&gt;
+                                            &lt;div class="post-item clearfix"&gt;
+                                                &lt;div class="post-content clearfix"&gt;
+                                                    &lt;div class="post-thumb-wrap"&gt;
+                                                        &lt;div class="post-thumb"&gt;
+                                                            &lt;a href="single-post.html"&gt;
+                                                                &lt;img src="img/newest-post-footer-1.png" alt="latestwid-img"&gt;
+                                                                &lt;div class="irhas-overlay"&gt;&lt;div&gt;
+                                                            &lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- thumbnail--&gt;
+                                                    &lt;div class="post-inner-content has-thumb clearfix"&gt;
+                                                        &lt;h5&gt;&lt;a href="single-post.html"&gt;How to surviving on the great
+                                                                industry age&lt;/a&gt;&lt;/h5&gt;
+                                                        &lt;div class="meta-latest-news"&gt;
+                                                            &lt;div class="meta-info"&gt;
+                                                                &lt;span class="date span-head"&gt;
+                                                                    &lt;a href="#"&gt;
+                                                                        &lt;span&gt;July 14, 2020&lt;/span&gt;
+                                                                    &lt;/a&gt;
+                                                                &lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- widget-news end --&gt;
+                                            &lt;!-- widget-news --&gt;
+                                            &lt;div class="post-item clearfix"&gt;
+                                                &lt;div class="post-content clearfix"&gt;
+                                                    &lt;div class="post-thumb-wrap"&gt;
+                                                        &lt;div class="post-thumb"&gt;
+                                                            &lt;a href="single-post.html"&gt;
+                                                                &lt;img src="img/newest-post-footer-1.png" alt="latestwid-img"&gt;
+                                                                &lt;div class="irhas-overlay"&gt;&lt;/div&gt;
+                                                            &lt;/a&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;!-- thumbnail--&gt;
+                                                    &lt;div class="post-inner-content has-thumb clearfix"&gt;
+                                                        &lt;h5&gt;&lt;a href="single-post.html"&gt;Teamwork as a team is the best way to
+                                                                do the job&lt;/a&gt;
+                                                        &lt;/h5&gt;
+                                                        &lt;div class="meta-latest-news"&gt;
+                                                            &lt;div class="meta-info"&gt;
+                                                                &lt;span class="date span-head"&gt;
+                                                                    &lt;a href="#"&gt;
+                                                                        &lt;span&gt;July 14, 2020&lt;/span&gt;
+                                                                    &lt;/a&gt;
+                                                                &lt;/span&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            &lt;!-- widget-news end --&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="footer-widget item col-span-3 sm:col-span-12 res:col-span-12"&gt;
+                                &lt;div class="widget-footer widget_text"&gt;
+                                    &lt;div class="title"&gt;
+                                        &lt;h4 class="widget-title"&gt;Get In Touch&lt;/h4&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="textwidget"&gt;
+                                        &lt;p&gt;&lt;strong&gt;+62 828 111 96 75&lt;/strong&gt;&lt;/p&gt;
+                                        &lt;p&gt;Jl. Maleer Indah II, Maleer, Batununggal, Kota Bandung, Jawa Barat 40274.&lt;/p&gt;
+                                        &lt;p&gt;irhas@contact.com&lt;br&gt;
+                                            info@irhas.com
+                                        &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Footer Widgets --&lt;
+                &lt;div class="footer-bottom-holder"&lt;
+                    &lt;div class="thaw-container"&gt;
+                        &lt;div class="footer-bottom grid grid-cols-12"&gt;
+                            &lt;div class="footer-bottom-lisensi col-span-6 res:col-span-12 sm:col-span-12 self-center"&gt;
+                                &lt;!-- COPYRIGHT START--&gt;
+                                &lt;p class="copyright-footer"&gt;Built by &lt;a href="https://themesawesome.com/"&gt;Themes Awesome&lt;/a&gt;
+                                &lt;/p&gt;
+                                &lt;!-- COPYRIGHT END --&gt;
+                            &lt;/div&gt;
+                            &lt;div
+                                class="footer-bottom-contact col-span-6 res:col-span-12 sm:col-span-12 self-center flex justify-end flex-wrap items-stretch items-center"&gt;
+                                &lt;div class="contact-footer items-center"&gt;
+                                    &lt;div class="contact-footer-menu"&gt;
+                                        &lt;ul class="sm"&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Privacy Policy&lt;/a&gt;&gt;/li&lt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Cookie Policy&lt;/a&gt;&lt;/li&gt;
+                                            &lt;li class="menu-item"&gt;&lt;a href="#"&gt;Terms And Condition&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/div&gt;
+                                    &lt;ul class="footer-socials"&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/footer&gt;
+            &lt;!-- End Footer --&gt;
+
+            &lt;!--END IRHAS3 FOOTER--&gt;
+		</pre>
+
+            <div class="subsection" id="css_structure">
+                <h4>CSS Structure</h4>
+                <p> The organization of the CSS is one of our priorities.<br>
+                    These are the CSS file we&#39;re using in the template:</p>
+                <pre>
+    - aos.css - (Animated on scrooling)
+
+    - font.css - (Font styles)
+
+    - all.min.css - (Fontawesome styles)
+
+    - lightgallery.min.css - (Lightbox gallery styles)
+    
+    - plugin.css - (This stylesheet contains any libraries css)
+
+    - responsive.css - (For media query)
+
+    - thaw-flexgrid - (For grid column)
+
+    - swiper.min.css - (Swiper style)
+
+    -style.css - (Generic styles, resets & normalization)
+		</pre>
+            </div>
+
+            <div class="clear"></div>
+
+            <hr>
+
+            <div class="subsection" id="java_script">
+                <h4>Javascript</h4>
+                <p> <strong>jQuery </strong>- is a Javascript library that greatly reduces the amount of code that you
+                    must write.<br>
+                    For more information, please visit <a href="http://www.jquery.com/">http://www.jquery.com/</a><br>
+                    <br>
+                    The initialization of the elements, libs and features is made by the file main.js, in the JS
+                    folder.<br>
+                    Take a look at the &quot;build&quot; function to see what it does.
+                </p>
+            </div>
+
+            <div class="subsection" id="customization_styles">
+                <h4>Customization &amp; Styles</h4>
+                <h5>Fonts</h5>
+                <p> To change the font, please take a look in the head part of the website and you will find this tag:
+                </p>
+                <p class="note">We use Poppins, Roboto, Architects Daughter, Prata, Karla, Hind, Montserrat, irhas font
+                    family in IRHAS. You can check the font
+                    at root > assets > css > fonts</p>
+                <p> To change the font, install it manually with convert the download zipped font to transfonter.org</p>
+            </div>
+
+
+            <div class="subsection" id="responsive">
+                <h4>Responsive</h4>
+                <p> The template supports a handful of media queries to help make your projects more appropriate on
+                    different devices and screen resolutions.</p>
+                <h5><br>Here&#39;s what&#39;s included:&nbsp;</h5>
+                <p style="margin-left: 40px;">
+                    <strong>Label</strong>: Large display<br>
+                    <strong> Layout width:</strong> 1200px and up<br>
+                    <strong> Column width:</strong> 70px<br>
+                    <strong> Gutter width: </strong>30px<br>
+                    <br>
+                    <strong>Label</strong>: Default<br>
+                    <strong> Layout width: </strong>980px and up<br>
+                    <strong> Column width: </strong>60px<br>
+                    <strong> Gutter width:</strong> 20px<br>
+                    <br>
+                    <strong>Label</strong>: Portrait tablets<br>
+                    <strong> Layout width: </strong>768px and above<br>
+                    <strong> Column width:</strong> 42px<br>
+                    <strong> Gutter width: </strong>20px<br>
+                    <br>
+                    <strong> Label: </strong>Phones to tablets<br>
+                    <strong> Layout width: </strong>767px and below<br>
+                    <strong> Column width:</strong> Fluid columns, no fixed widths<br>
+                    <br>
+                    <strong> Label: </strong>Phones<br>
+                    <strong> Layout width:</strong> 480px and below<br>
+                    <strong> Column width:</strong> Fluid columns, no fixed widths
+                </p>
+
+            </div>
+
+            <div class="subsection" id="source_credits">
+                <h4>Source &amp; Credits</h4>
+                <p class="note">
+                    The images included in preview are for demonstration purposes and should always be replaced with
+                    your own work.</p>
+                <p style="margin-left: 40px;">
+                    <br>
+                <ul>
+                    <li>Resources Used:
+                        <ul>
+                            <li><a href="https://michalsnik.github.io/aos/">Animate On Scrool</a></li>
+                            <li><a href="https://www.smartmenus.org/">SmartMenus</a></li>
+                            <li><a href="https://sachinchoolur.github.io/lightGallery/">lightGallery</a></li>
+                            <li><a href="https://fonts.google.com/">google font</a></li>
+                            <li><a href="https://swiperjs.com/">Swiper</a></li>
+                            <li><a href="https://fontawesome.com/">Fontawesome</a></li>
+                            <li><a href="https://isotope.metafizzy.co/">Isotope</a></li>
+                            <li><a href="https://imagesloaded.desandro.com/">ImagesLoaded</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+
+                <hr>
+
+                <p>Once again, thank you for purchasing this theme. Customer satisfaction is our #1 priority, which is
+                    why we always endeavour to provide the best service we can. We’re only an email away if you ever
+                    need us!</p>
+
+                <p class="append-bottom alt large"><strong>Themes Awesome Team</strong></p>
+                <p><a href="#toc">Go To Table of Contents</a></p>
+
+                <hr class="space">
+            </div><!-- end div .container -->
+</body>
+
+</html>
